@@ -5,43 +5,48 @@
 </ion-header>
 
 <ion-content>
-<div>
-  <ion-avatar>
-    <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
-  </ion-avatar>
-</div>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4" offset="5">
+        <ion-avatar>
+          <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
   <ion-item button detail="true">
     <ion-icon name="person" slot="start"></ion-icon>
-    <ion-label><h2>Account</h2></ion-label>   
-  </ion-item>
-  
-  <ion-item button detail="true">
-      <ion-icon name="receipt" slot="start"></ion-icon>
-      <ion-label><h3>Medical Record</h3></ion-label>
+    <ion-label><h2>Account</h2></ion-label>
   </ion-item>
 
   <ion-item button detail="true">
-      <ion-icon name="notifications" slot="start"></ion-icon>
-     <ion-label><h2>Notification</h2></ion-label>
+    <ion-icon name="receipt" slot="start"></ion-icon>
+    <ion-label><h3>Medical Record</h3></ion-label>
   </ion-item>
 
   <ion-item button detail="true">
-      <ion-icon name="eye" slot="start"></ion-icon>
-     <ion-label><h2>Appearance</h2></ion-label>
+    <ion-icon name="notifications" slot="start"></ion-icon>
+    <ion-label><h2>Notification</h2></ion-label>
   </ion-item>
-  
-  <ion-item button detail="true" >
-       <ion-icon name="volume-medium" slot="start"></ion-icon>
-       <ion-label><h2>Privacy & Security</h2></ion-label>
+
+  <ion-item button detail="true">
+    <ion-icon name="eye" slot="start"></ion-icon>
+    <ion-label><h2>Appearance</h2></ion-label>
   </ion-item>
-  
+
   <ion-item button detail="true">
-         <ion-icon name="shield-half" slot="start"></ion-icon>
-         <ion-label><h2>Sound</h2></ion-label>
-    </ion-item>
-  
+    <ion-icon name="volume-medium" slot="start"></ion-icon>
+    <ion-label><h2>Privacy & Security</h2></ion-label>
+  </ion-item>
+
   <ion-item button detail="true">
-      <ion-icon name="language" slot="start"></ion-icon>
-      <ion-label><h3>Language</h3></ion-label>
+    <ion-icon name="shield-half" slot="start"></ion-icon>
+    <ion-label><h2>Sound</h2></ion-label>
+  </ion-item>
+
+  <ion-item button detail="true">
+    <ion-icon name="language" slot="start"></ion-icon>
+    <ion-label><h3>Language</h3></ion-label>
   </ion-item>
 </ion-content>

@@ -6,6 +6,26 @@ const routes: Routes = [
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then((m) => m.TabsPageModule),
   },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'signup',
+    loadChildren: () => import('./signup/signup.module').then( m => m.SignupPageModule)
+  },
+  {
+    path: 'welcome',
+    loadChildren: () => import('./welcome/welcome.module').then( m => m.WelcomePageModule)
+  },
+  {
+    path: 'searchdoctors',
+    loadChildren: () => import('./searchdoctors/searchdoctors.module').then( m => m.SearchdoctorsPageModule)
+  },
+  {
+    path: 'docsignup',
+    loadChildren: () => import('./docsignup/docsignup.module').then( m => m.DocsignupPageModule)
+  },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })],
